@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form action="form-echo.php" method="get">
+    USERNAME:
+    <input
+        type="text"
+        name="username"
+        placeholder="Username">
+
+    <p><label>สาขาวิชา:</label>
+    <select name="dept">
+        <option value="">--Please choose an option--</option>
+        <option value="CS">CS</option>
+        <option value="IC">IC</option>
+        <option value="MA">MA</option>
+        <option value="IMI">IMI</option>
+        <option value="AS">AS</option>
+        <option value="AFET">AFET</option>
+    </select>
+    <br><br>
+
+    1:
+    <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        pattern="[A-Z]{1,10}"
+        title="Username should only contain capital letters.">
+        <br><br>
+
+    2:
+    <input
+        type="text"
+        name="name"
+        placeholder="รหัสนักศึกษา"
+        pattern="\d{2}-\d{6}-\d{4}-\d{1}"
+        title="ต้องมีเครื่องหมาย - คั่น เช่น 61-040626-1234-5">
+        <br><br>
+    
+    3:
+    <input
+       type="text"
+       name="name"
+       placeholder="บ้านเลขที่"
+       pattern="\d+[/]?\d+"
+       title="เช่น 23/4 69">
+       <br><br>
+
+    4:
+    <input
+        type="text"
+        name="name"
+        placeholder="รหัสสินค้า"
+        pattern="[A-Z]{3}\d{2}"
+        title="อักขระ 3 ตัวเเรกเป็นตัวพิมพ์ใหญ่ ตามด้วยเลข 2 ตัวเท่านั้น เช่น AAA12">
+        <br><br>
+    5:
+    <input
+        type="text"
+        name="username"
+        placeholder="ชื่อภาษาไทย"
+        pattern="[ก-๏]*"
+        title="กรอกชื่อด้วยภาษาไทยเท่านั้น">
+        <br><br>
+
+    <p><input type="submit" value="Submit"></p>
+    </form>
+
+</body>
+</html>
